@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: javaApp
+  name: javaApp
 spec:
-replicas: 2
-revisionHistoryLimit: 3
-selector:
-matchLabels:
-app: javaApp
-template:
-metadata:
-labels:
-app: javaApp
-spec:
-containers:
-- image: jenkins-example:149
-name: javaApp
-ports:
-- containerPort: 80
+  replicas: 2
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+    app: javaApp
+  template:
+    metadata:
+      labels:
+        app: javaApp
+    spec:
+    containers:
+    - image: jenkins-example:149
+      name: javaApp
+      ports:
+      - containerPort: 80
