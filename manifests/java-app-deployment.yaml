@@ -14,7 +14,7 @@ spec:
         app: javaApp
     spec:
     containers:
-    - image: jenkins-example:149
+    - image: 3.89.70.197:32002/jenkins-example:149
       name: javaApp
       ports:
       - containerPort: 80
