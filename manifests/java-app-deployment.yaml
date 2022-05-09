@@ -13,8 +13,8 @@ spec:
       labels:
         app: javaApp
     spec:
-    containers:
-    - image: 3.89.70.197:32002/jenkins-example:149
-      name: javaApp
-      ports:
-      - containerPort: 80
+      containers:
+      - image: 3.89.70.197:32002/jenkins-example:149
+        name: javaApp
+        ports:
+        - containerPort: 80
